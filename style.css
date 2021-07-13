@@ -1,12 +1,202 @@
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*------------------------------------------------------------------------------POLICE-------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
-}
 body 
 {
-    font-family: 'ralewaythin';
+    font-family: 'raleway', 'sans-serif';
+    margin: 0;
 }
+
+
+/*------------------------------------------------------------------------------WHOLE PAGE---------------------------------------------------------------------------------*/
+
+.main-wrapper
+ {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+
+}
+
+/*------------------------------------------------RATING--------------------------------------------------*/
+.true {
+    color: #0652fc;
+    padding-bottom: 0.5rem;
+}
+
+.false {
+    color: lightgray;
+}
+
+.rating {
+    padding-left: 0.4rem;
+}
+
+
+    /*---------------------------------------------------------------------------NAV BAR-----------------------------------------------------------------------*/
+
+.headerNav
+{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+}
+
+
+.headerNavHosting 
+{
+    display: flex;
+    order: 1;
+    margin: auto;
+}
+
+.headerNavActivity 
+{
+    display: flex;
+    order: 2;
+    margin: auto;
+}
+
+.headerNavSignup
+{
+    display: flex;
+    order: 3;
+    margin: auto;
+}
+
+
+    /*-------------------------------------------------------------SEARCH BAR--------------------------------------------------------------------*/
+
+.search {
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+
+
+    /*----------------------------------------------------------------------FILTERS---------------------------------------------------------------------------*/
+
+.searchFiltersTitles {
+    display: flex;
+    flex-direction: row;
+}
+
+
+    /*--------------------------------------------------------------HOSTING------------------------------------------------------------------------*/
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    border: white 3px solid;
+    box-shadow: 5px 5px 10px rgb(177 177 177);
+}
+
+.hebergement-background {
+    margin: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.25rem;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+        /*-----------------------------------------------HOSTING POPU----------------------------------------------------------*/
+.card-popu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    border: white 3px solid;
+    box-shadow: 5px 5px 10px rgb(177 177 177);
+
+}
+
+.popu-background {
+    margin: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 1.25rem;
+    padding: 1rem;
+}
+
+
+
+    
+
+
+
+    /*-------------------------------------------------------------------ACTIVITIES------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------------------FOOTER----------------------------------------------------------------------*/
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px
+    
+}
+.footer-menu 
+{
+    list-style: none;
+    padding: 0px;
+    width:110%;
+}
+
+.footer-content
+ {
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+
+
+.footerTitle 
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footer-menu {
+    font-size: 0.9em;
+
+}
+
+.text-smaller
+{
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+    padding: 3.5%;
+}
+
+
+
+
