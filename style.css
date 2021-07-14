@@ -107,7 +107,7 @@ body
     background-color: white;
     border-radius: 1.25rem;
     border: white 3px solid;
-    box-shadow: 5px 5px 10px rgb(177 177 177);
+    box-shadow: 5px 5px 10px grey;
 }
 
 .hebergement-background {
@@ -133,6 +133,15 @@ body
 
 
         /*-----------------------------------------------HOSTING POPU----------------------------------------------------------*/
+.hebergementprincipaux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
 .card-popu {
     display: flex;
     flex-direction: column;
@@ -141,7 +150,7 @@ body
     background-color: white;
     border-radius: 1.25rem;
     border: white 3px solid;
-    box-shadow: 5px 5px 10px rgb(177 177 177);
+    box-shadow: 5px 5px 10px grey;
 
 }
 
