@@ -24,6 +24,9 @@ a {
   background-color: white;
 }
 
+a:visited {
+  color: black;
+}
 /*------------------------------------------------RATING--------------------------------------------------*/
 .true {
   color: #0652fc;
@@ -35,7 +38,7 @@ a {
 }
 
 .rating {
-  padding-left: 0.4rem;
+  padding-left: 0.9rem;
 }
 
 /*---------------------------------------------------------------------------NAV BAR-----------------------------------------------------------------------*/
@@ -69,7 +72,7 @@ nav li {
 }
 
 #headerNavHosting {
-  padding: 0rem;
+  
   font-weight: 500;
 }
 
@@ -77,7 +80,7 @@ nav a:hover,
 .active {
   color: #0065fc;
   border-top: 3px solid #0065fc;
-  padding-top: 23px;
+  padding-top: 13px;
 }
 
 .headerSignup {
@@ -135,6 +138,7 @@ nav a:hover,
 
 .search-button:hover {
   transform: scale(1.01);
+  
 }
 
 /*----------------------------------------------------------------------FILTERS---------------------------------------------------------------------------*/
@@ -155,8 +159,9 @@ nav a:hover,
 
 .filtre:hover {
   background-color: #deebff;
-  font-weight: bold;
+  
   transform: scale(1.01);
+  transition-duration: 0.3s;
 }
 
 #filtre-icon {
@@ -175,6 +180,7 @@ nav a:hover,
   background-color: #0065fc;
   color: #deebff;
   transform: scale(1.01);
+  transition-duration: 0.3s;
 }
 
 .fa-info {
@@ -248,6 +254,7 @@ nav a:hover,
 
 .card-main:hover {
   transform: scale(1.02);
+  transition-duration: 0.3s;
 }
 
 .afficher {
@@ -291,6 +298,7 @@ nav a:hover,
 
 .card-popu:hover {
   transform: scale(1.02);
+  transition-duration: 0.3s;
 }
 
 .card-popu p,
@@ -367,6 +375,7 @@ h3 {
 
 .card-act:hover {
   transform: scale(1.02);
+  transition-duration: 0.3s;
 }
 
 .card-act h3 {
