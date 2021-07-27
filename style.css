@@ -116,7 +116,7 @@ nav a:hover,
 
 .search-bar {
   min-height: 2.42rem;
-  text-align: center;
+  
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
   border-left: none;
@@ -124,6 +124,7 @@ nav a:hover,
   min-width: 25ch;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
+  font-weight: 600;
 }
 
 .submit-button {
@@ -143,7 +144,7 @@ nav a:hover,
 }
 
 .submit-button:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .loupe {
@@ -171,14 +172,14 @@ nav a:hover,
 .filtre:hover {
   background-color: #DEEBFF;
   font-weight: bold;
-  transform: scale(1.03);
+  transform: scale(1.02);
 
 }
 
 .filtre:hover .filtre__icon {
   background-color: #0065FC;
   color: #DEEBFF;
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .filtre__icon {
@@ -207,6 +208,8 @@ nav a:hover,
 .i-info {
   align-items: center;
 }
+
+
 
 /*--------------------------------------------------------------HOSTING------------------------------------------------------------------------*/
 .hebergements {
