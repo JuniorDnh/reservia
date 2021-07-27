@@ -56,6 +56,10 @@ header {
   align-items: baseline;
 }
 
+.logo {
+  flex-grow: 3;
+}
+
 #logoreservia {
   display: flex;
   flex-direction: row;
@@ -72,50 +76,49 @@ nav li {
 }
 
 #headerNavHosting {
-  
   font-weight: 500;
+  color: #0065fc;
+  text-align: center;
 }
 
 nav a:hover,
 .active {
   color: #0065fc;
-  border-top: 3px solid #0065fc;
+  border-top: 4px solid #0065fc;
   padding-top: 13px;
 }
 
-.headerSignup {
+#headerSignup {
+  display: flex;
+  order: 1;
+  flex-direction: row-reverse;
   color: #0065fc;
   font-weight: bold;
 }
 /*-------------------------------------------------------------SEARCH BAR--------------------------------------------------------------------*/
 
-.searchheader {
-  margin: 0.8rem;
-}
+.search {
+  margin-top: 2rem;
 
-.search-bar-bloc {
-  margin: 2rem;
-}
+  padding-left: 1rem;
 
-.searchFiltersTitle {
-  margin: 0.8rem;
 }
 
 .location-icon {
   padding: 0.7rem;
-  padding-left: 1rem;
   padding-right: 0.5rem;
+  padding-left: 1rem;
   padding-top: 0.55rem;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   border-radius: 0.8rem 0 0 0.8rem;
   text-align: center;
 }
 
-.searchFormSearchinput {
+.search-bar {
   min-height: 2.42rem;
   text-align: center;
-  border-top: #f2f2f2 1px solid;
-  border-bottom: #f2f2f2 1px solid;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
   border-left: none;
   border-right: none;
   min-width: 25ch;
@@ -123,27 +126,33 @@ nav a:hover,
   margin-top: 1rem;
 }
 
-.search-button {
+.submit-button {
   min-height: 2.42rem;
   text-align: center;
   border-radius: 0 0.8rem 0.8rem 0;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #0065fc;
-  border-color: #0065fc;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  background-color: #0065FC;
+  border-color: #0065FC;
   border: none;
   color: white;
-  margin-left: -0.5rem;
+  cursor: pointer;
+  margin-left: -0.4rem;
 }
 
-.search-button:hover {
-  transform: scale(1.01);
-  
+.submit-button:hover {
+  transform: scale(1.03);
 }
 
-/*----------------------------------------------------------------------FILTERS---------------------------------------------------------------------------*/
+.loupe {
+  display: none;
+}
 
-.section-filtre {
+/* -----------------------------------------Filtres------------------------*/
+
+.filtres-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -151,57 +160,54 @@ nav a:hover,
 
 .filtre {
   padding-right: 1rem;
+
   border-radius: 2em 2em 2em 2em;
-  border: #f2f2f2 2px solid;
+  border: lightgray 2px solid;
   margin: 0.25rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .filtre:hover {
-  background-color: #deebff;
-  
-  transform: scale(1.01);
-  transition-duration: 0.3s;
+  background-color: #DEEBFF;
+  font-weight: bold;
+  transform: scale(1.03);
+
 }
 
-#filtre-icon {
+.filtre:hover .filtre__icon {
+  background-color: #0065FC;
+  color: #DEEBFF;
+  transform: scale(1.03);
+}
+
+.filtre__icon {
   text-align: center;
   border-radius: 100%;
   padding: 1em;
-  background-color: #f2f2f2;
-  color: #0065fc;
-  margin-left: -3px;
+  background-color: #DEEBFF;
+  color: #0065FC;
   margin-right: 1rem;
   margin-top: -3px;
+  margin-left: -3px;
   margin-bottom: -3px;
 }
 
-.filtre:hover #filtre-icon {
-  background-color: #0065fc;
-  color: #deebff;
-  transform: scale(1.01);
-  transition-duration: 0.3s;
-}
-
-.fa-info {
-  color: #0065fc;
+.info {
+  color: #0065FC;
   border: lightgray 0.5px solid;
   border-radius: 100%;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
+  padding-right: 0.8em;
+  padding-left: 0.7rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.searchFiltersTitles {
-  display: flex;
-  flex-direction: row;
-  font-weight: bold;
+  margin-right: 0.8rem;
 }
 
 .i-info {
-  margin: 1.5em;
+  align-items: center;
 }
+
 /*--------------------------------------------------------------HOSTING------------------------------------------------------------------------*/
 .hebergements {
   display: flex;
@@ -266,12 +272,13 @@ nav a:hover,
 }
 
 /*-----------------------------------------------HOSTING POPU----------------------------------------------------------*/
+
 .popu-background {
   margin: 2rem;
   background-color: #f2f2f2;
   border-radius: 1.25rem;
   padding: 1rem;
-  min-width: 30%;
+  min-width: 25%;
 }
 
 .title-popu {
@@ -286,13 +293,13 @@ nav a:hover,
 
 .card-popu {
   display: flex;
-  height: 7rem;
+  height: 9rem;
   margin: 1rem;
   background-color: white;
   border-radius: 1.25rem;
-  border-top: white solid;
-  border-left: white solid;
-  border-right: white solid;
+  border-top: white 4px solid;
+  border-left: white 4px solid;
+  border-right: white 4px solid;
   box-shadow: 1px 1px 5px grey;
 }
 
@@ -304,7 +311,6 @@ nav a:hover,
 .card-popu p,
 h3 {
   flex-wrap: wrap;
-  flex-direction: row;
   font-size: 0.9rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
@@ -324,10 +330,6 @@ h3 {
   border-radius: 1.25rem 0 0 1.25rem;
 }
 
-.card-popu_img img-popu {
-  display: flex;
-  border-radius: 1.25rem;
-}
 
 /*-------------------------------------------------------------------ACTIVITIES------------------------------------------------------------------*/
 
@@ -428,12 +430,29 @@ h3 {
 }
 
 /*<----------------------------------------Media Queries<<---------------------------------*/
+/* Large devices (desktops, more than 1200px)*/ 
+@media screen and (min-width: 1999.98px) {
 
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
   .hebergements {
     display: flex;
     flex-direction: row;
+    margin: 0;
+  }
+
+  .popu-background {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+} 
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media screen and (max-width: 1199.98px) {
+  .hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .hebergement-background {
@@ -441,7 +460,12 @@ h3 {
   }
 
   .hebergement-popu {
+    display: flex;
     flex-wrap: nowrap;
+  }
+
+  .card-main {
+    width: 30%;
   }
 
   .card-popu {
@@ -451,9 +475,13 @@ h3 {
 }
 
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
   .hebergement-popu {
     flex-wrap: wrap;
+  }
+
+  .card-main {
+    min-width: 90%;
   }
 
   .card-popu {
@@ -466,12 +494,114 @@ h3 {
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-  footer {
+@media screen and (max-width: 575.98px) {
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .headerSignup {
+    width: 50%;
+  }
+
+  #headerNavHosting {
+    border-bottom: 4px solid #0065fc;
+    padding-bottom: 13px;
+    border-top: none;
+    width: 50%;
+  }
+
+  #headerNavActivity {
+    border-bottom: 4px solid #f2f2f2;
+    padding-bottom: 13px;
+    width: 50%
+  }
+
+  #headerNavActivity a:hover {
+    border-bottom: 4px solid #0065fc;
+    padding-bottom: 13px;
+    border-top: none;
+  }
+
+  #headerNav {
+    width: 100%;
+    order: 1;
+  }
+
+  .hebergements {
+    width: 90%;
+  }
+
+
+  .activites {
+    width: 90%;
+  }
+
+  #headerNav a:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid #0065fc;
+    transition-duration: 0.5s;
+  }
+
+  .search-button {
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+
+  .rechercher {
+    display: none;
+  }
+
+  .loupe {
+    display: inline;
+  }
+
+  .hebergement-background {
+    background-color: white;
+    margin: 0;
+  }
+
+  .hebergement-popu {
+    flex-wrap: wrap;
+  }
+
+  .popu-background {
+    border-radius: 0%;
+    margin: 0;
+  }
+
+  .card-popu {
+    max-width: 90%;
+  }
+
+  .card-main {
+    max-width: 90%;
+  }
+
+  .acti-card {
+    flex-wrap: wrap;
+    width: 100;
+  }
+
+  .card-act {
+    min-width: 60%;
+    max-height: 11rem;
+  }
+
+  .cacti-card_blocs {
+    min-height: 90%;
+  }
+  
+  .footer-content {
     margin: 0;
     flex-direction: column;
     padding: 2rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
