@@ -25,7 +25,8 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 /*------------------------------------------------RATING--------------------------------------------------*/
 .true {
@@ -41,19 +42,21 @@ a:visited {
   padding-left: 0.9rem;
 }
 
+
+
 /*---------------------------------------------------------------------------NAV BAR-----------------------------------------------------------------------*/
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 #headerNav {
   display: flex;
   flex-direction: row;
+  padding-top: 21px;
   align-items: baseline;
+  width: 140%;
 }
 
 .logo {
@@ -64,6 +67,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-top: 19px;
+  padding-left: 25px;
 }
 
 nav ul {
@@ -81,12 +86,14 @@ nav li {
   text-align: center;
 }
 
-nav a:hover,
+.headernavbar a:hover,
 .active {
   color: #0065fc;
   border-top: 4px solid #0065fc;
-  padding-top: 13px;
+  padding-top: 33px;
 }
+
+
 
 #headerSignup {
   display: flex;
@@ -96,6 +103,13 @@ nav a:hover,
   font-weight: bold;
 }
 /*-------------------------------------------------------------SEARCH BAR--------------------------------------------------------------------*/
+.search-herdertitle {
+  margin-bottom: 0.5em;
+}
+
+.search p {
+  margin-bottom: 0em;
+}
 
 .search {
   margin-top: 2rem;
@@ -116,7 +130,7 @@ nav a:hover,
 
 .search-bar {
   min-height: 2.42rem;
-  
+  padding: 15px;
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
   border-left: none;
@@ -125,6 +139,11 @@ nav a:hover,
   margin-bottom: 2.5rem;
   margin-top: 1rem;
   font-weight: 600;
+  color: black;
+}
+
+.search-bar-bloc {
+  margin-bottom: -2.5em;
 }
 
 .submit-button {
@@ -152,6 +171,12 @@ nav a:hover,
 }
 
 /* -----------------------------------------Filtres------------------------*/
+.filters {
+  margin: 0 1rem 0rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
 
 .filtres-section {
   display: flex;
@@ -161,17 +186,18 @@ nav a:hover,
 
 .filtre {
   padding-right: 1rem;
-
+  align-items: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
   border-radius: 2em 2em 2em 2em;
   border: lightgray 2px solid;
-  margin: 0.25rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .filtre:hover {
   background-color: #DEEBFF;
-  font-weight: bold;
   transform: scale(1.02);
 
 }
@@ -212,6 +238,10 @@ nav a:hover,
 
 
 /*--------------------------------------------------------------HOSTING------------------------------------------------------------------------*/
+.activites_a_marseille {
+  margin-bottom: 0em;
+}
+
 .hebergements {
   display: flex;
   align-items: stretch;
@@ -227,6 +257,7 @@ nav a:hover,
 }
 
 .title-background {
+  padding-top: 0rem;
   padding-left: 1rem;
   padding-right: 1rem;
   align-items: center;
@@ -245,8 +276,12 @@ nav a:hover,
   border-radius: 1.25rem;
   border: white 4px solid;
   box-shadow: 1px 1px 5px grey;
-  height: 15rem;
+  height: 15em;
   max-width: 27%;
+}
+
+.card-main h3 {
+  font-size: 1.03em;
 }
 
 .card-main_img {
@@ -266,6 +301,25 @@ nav a:hover,
   transition-duration: 0.3s;
 }
 
+.info-popu h3 {
+  display: block;
+  font-size: 1.03em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: bold;
+}
+
+.info-hosting {
+  padding: 14px;
+}
+
+p.info-hosting {
+  padding-top: 0px;
+}
+
+
 .afficher {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -280,18 +334,21 @@ nav a:hover,
   margin: 2rem;
   background-color: #f2f2f2;
   border-radius: 1.25rem;
-  padding: 1rem;
-  min-width: 25%;
+  padding: 1.4rem;
+  min-width: 28%;
 }
 
 .title-popu {
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
 .hebergement-popu {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  row-gap: 0.2rem;
+  align-items: start;
+
 }
 
 .card-popu {
@@ -315,7 +372,7 @@ nav a:hover,
 h3 {
   flex-wrap: wrap;
   font-size: 0.9rem;
-  padding-left: 1rem;
+  padding-left: 1.1rem;
   padding-right: 0.5rem;
   line-height: 0.75rem;
 }
@@ -345,6 +402,7 @@ h3 {
   padding: 1rem;
   align-content: stretch;
   flex-wrap: nowrap;
+  padding-top: 0px;
 }
 
 .acti-card_blocs {
@@ -498,10 +556,18 @@ h3 {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
+  .main-wrapper {
+    padding: 0em;
+    padding-right: 0em;
+  }
   
   header {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .headerNav {
+    width: 130%;
   }
 
   .logo {
@@ -509,47 +575,60 @@ h3 {
     height: 50%;
   }
 
-  .headerSignup {
+  #headerSignup {
     width: 50%;
+    position: absolute;
+    top: 3%;
+    right: 4%;
   }
 
   #headerNavHosting {
     border-bottom: 4px solid #0065fc;
-    padding-bottom: 13px;
+    padding-bottom: 30px;
     border-top: none;
-    width: 50%;
   }
 
   #headerNavActivity {
     border-bottom: 4px solid #f2f2f2;
-    padding-bottom: 13px;
+    padding-bottom: 30px;
     width: 50%
   }
 
   #headerNavActivity a:hover {
     border-bottom: 4px solid #0065fc;
-    padding-bottom: 13px;
+    padding-bottom: 30px;
     border-top: none;
   }
 
-  #headerNav {
-    width: 100%;
-    order: 1;
+
+  .headernavbar {
+    padding-left: 0em;
+    position: relative;
+    left: 1.7em;
   }
 
+  
+
+
   .hebergements {
-    width: 90%;
+    width: 100%;
   }
 
 
   .activites {
-    width: 90%;
+    width: 100%;
   }
 
-  #headerNav a:hover {
+  #headerNavHosting a:hover {
     border-top: 3px solid white;
     border-bottom: 3px solid #0065fc;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
+  }
+
+  #headerNavActivity:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid #0065fc;
+    transition-duration: 0.1s;
   }
 
   .search-button {
@@ -564,9 +643,19 @@ h3 {
     display: inline;
   }
 
+  .filtres-section {
+    display: flex;
+    row-gap: 0.8em;
+  }
+
+  .filters {
+  margin-right: 82px;
+  }
+
   .hebergement-background {
     background-color: white;
     margin: 0;
+    padding: 0em;
   }
 
   .hebergement-popu {
@@ -576,6 +665,7 @@ h3 {
   .popu-background {
     border-radius: 0%;
     margin: 0;
+    padding: 0.4em;
   }
 
   .card-popu {
